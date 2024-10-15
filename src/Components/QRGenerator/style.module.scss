@@ -1,0 +1,44 @@
+.qr-generator-page {
+    background-image: linear-gradient(-60deg, #404258 50%, #6B728E 50%);
+    animation: slide 3s ease-in-out infinite alternate;
+    animation: move 1s infinite; /* adjust animation duration and repeat */
+}
+
+.bg-modal {
+    background: rgba(211, 211, 211 , 0.4);
+    width: 100%;
+    height: 150vh;
+    position: absolute;
+    top: 0;
+    padding-top: 150px;
+}
+
+.btn-opacity {
+  transition: all 0.5s ease;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.background-blue {
+    // background: #16212f;
+    background: #030404;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.preview-btn {
+  border: 2px solid rgba(255,255,255,0.4);
+  transition: all 0.5s ease;
+}
+.preview-btn:hover {
+  border: 2px solid rgba(255,255,255,1);
+}
