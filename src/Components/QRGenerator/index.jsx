@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 
 import { useEffect, useState, useRef } from "react";
 
-import useCreateDynamicQRCode from "./../../hooks/useCreateDynamicQRCode.js";
-import useFetchQRImage from "./../../hooks/useFetchQRImage.js";
-import useOpenAIPrompt from "../../hooks/useOpenAIPrompt.js";
-
 export default function QRGenerator() {
   const [isModalActive, setModalActive] = useState(false);
   const [walletAddress, setWalletAddress] = useState("");
